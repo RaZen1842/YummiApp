@@ -19,6 +19,20 @@ struct ContentView: View {
     }
 }
 
+struct Ingredient {
+    private var name: String
+    private var quantity: Int
+    private var unit: String
+    private var category: String
+    private var expiryDate: Int
+    
+    
+    
+}
+
+
+
+
 #Preview {
     ContentView()
 }
