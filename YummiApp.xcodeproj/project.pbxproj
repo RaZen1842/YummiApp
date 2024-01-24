@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85BE330E2B61753F0013DB85 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredients.swift */; };
+		85BE330F2B61753F0013DB85 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredients.swift */; };
 		85F3D1732B5FED2F001D144B /* YummiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1722B5FED2F001D144B /* YummiAppApp.swift */; };
 		85F3D1752B5FED2F001D144B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1742B5FED2F001D144B /* ContentView.swift */; };
 		85F3D1772B5FED31001D144B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F3D1762B5FED31001D144B /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85BE330D2B61753F0013DB85 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		85F3D16F2B5FED2F001D144B /* YummiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F3D1722B5FED2F001D144B /* YummiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiAppApp.swift; sourceTree = "<group>"; };
 		85F3D1742B5FED2F001D144B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 				85F3D1742B5FED2F001D144B /* ContentView.swift */,
 				85F3D1762B5FED31001D144B /* Assets.xcassets */,
 				85F3D1782B5FED31001D144B /* Preview Content */,
+				85BE330D2B61753F0013DB85 /* Ingredients.swift */,
 			);
 			path = YummiApp;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85F3D1752B5FED2F001D144B /* ContentView.swift in Sources */,
+				85BE330E2B61753F0013DB85 /* Ingredients.swift in Sources */,
 				85F3D1732B5FED2F001D144B /* YummiAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BE330F2B61753F0013DB85 /* Ingredients.swift in Sources */,
 				85F3D1842B5FED31001D144B /* YummiAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,26 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let ingredients = Ingredients(name: "Tomato", quantity: 3, unit: "lbs", category: "Fruit", expiryDate: "27/03/2024")
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, Shreyas!")
+            Text(ingredients.display())
+                .padding()
         }
-        .padding()
     }
-}
-
-struct Ingredient {
-    private var name: String
-    private var quantity: Int
-    private var unit: String
-    private var category: String
-    private var expiryDate: Int
-    
-    
-    
 }
 
 
