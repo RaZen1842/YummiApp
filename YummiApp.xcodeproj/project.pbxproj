@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		85BE330E2B61753F0013DB85 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredients.swift */; };
 		85BE330F2B61753F0013DB85 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredients.swift */; };
+		85BE33112B6178B90013DB85 /* YummiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1722B5FED2F001D144B /* YummiAppApp.swift */; };
+		85BE33132B6179B40013DB85 /* YummiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1832B5FED31001D144B /* YummiAppTests.swift */; };
+		85BE33142B6179CA0013DB85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1742B5FED2F001D144B /* ContentView.swift */; };
 		85F3D1732B5FED2F001D144B /* YummiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1722B5FED2F001D144B /* YummiAppApp.swift */; };
 		85F3D1752B5FED2F001D144B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1742B5FED2F001D144B /* ContentView.swift */; };
 		85F3D1772B5FED31001D144B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F3D1762B5FED31001D144B /* Assets.xcassets */; };
 		85F3D17A2B5FED31001D144B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F3D1792B5FED31001D144B /* Preview Assets.xcassets */; };
-		85F3D1842B5FED31001D144B /* YummiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1832B5FED31001D144B /* YummiAppTests.swift */; };
 		85F3D18E2B5FED31001D144B /* YummiAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D18D2B5FED31001D144B /* YummiAppUITests.swift */; };
 		85F3D1902B5FED31001D144B /* YummiAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D18F2B5FED31001D144B /* YummiAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -271,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BE33112B6178B90013DB85 /* YummiAppApp.swift in Sources */,
 				85BE330F2B61753F0013DB85 /* Ingredients.swift in Sources */,
-				85F3D1842B5FED31001D144B /* YummiAppTests.swift in Sources */,
+				85BE33142B6179CA0013DB85 /* ContentView.swift in Sources */,
+				85BE33132B6179B40013DB85 /* YummiAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

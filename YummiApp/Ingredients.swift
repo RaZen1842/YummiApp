@@ -8,10 +8,10 @@
 import Foundation
 
 struct Ingredients {
-    var name: String
+    let name: String
     var quantity: Int
     var unit: String
-    var category: String
+    let category: String
     var expiryDate: String
     
     
