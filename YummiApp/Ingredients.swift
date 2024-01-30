@@ -2,27 +2,12 @@
 //  Ingredients.swift
 //  YummiApp
 //
-//  Created by Veturi, Shreyas (HJRM) on 24/01/2024.
+//  Created by Veturi, Shreyas (HJRM) on 30/01/2024.
 //
 
 import Foundation
 
 struct Ingredients {
-    let name: String
-    var quantity: Int
-    var unit: String
-    let category: String
-    var expiryDate: String
-    
-    
-    func display() -> String {
-        return """
-Name: \(name)
-Quantity: \(quantity)
-Unit: \(unit)
-Category: \(category)
-Expiry Date: \(expiryDate)
-"""
-    }
-    
+    var ingredients = [Ingredient(name: "Tomato", quantity: 3, unit: "lbs", category: "Fruit", expiryDate: "27/03/2024"),
+                       Ingredient(name: "Potato", quantity: 5, unit: "lbs", category: "Vegetable", expiryDate: "19/08/2025")]
 }

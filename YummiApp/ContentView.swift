@@ -9,17 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let ingredients = Ingredients(name: "Tomato", quantity: 3, unit: "lbs", category: "Fruit", expiryDate: "27/03/2024")
+    @State private var ingredients = Ingredients()
+    @State private var selectedIngredient: Int = 0
     
     
     var body: some View {
-        VStack {
-            Text(ingredients.display())
-                .padding()
+        Form {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("\(ingredients.ingredients[selectedIngredient].display())")
+                Button("Next Ingredient", action: {
+                    selectedIngredient += 1
+                    if selectedIngredient == self.ingredients.ingredients.count {
+                        selectedIngredient = 0
+                    }
+                })
+            }
         }
     }
 }
-
 
 
 
