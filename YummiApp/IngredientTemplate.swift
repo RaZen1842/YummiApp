@@ -10,7 +10,7 @@ import Foundation
 struct Ingredient {
     let name: String
     var quantity: String
-    var unit: String
+    var unit: Unit
     let category: String
     var expiryDate: String
     
@@ -19,10 +19,15 @@ struct Ingredient {
         return """
 Name: \(name)
 Quantity: \(quantity)
-Unit: \(unit)
+Unit: \(unit.rawValue)
 Category: \(category)
 Expiry Date: \(expiryDate)
 """
     }
     
+}
+
+enum Unit: String, CaseIterable {
+    case lbs, oz, kg, g, L, mL, items
+    var id: Self { self }
 }
