@@ -11,11 +11,11 @@ import XCTest
 final class YummiAppTests: XCTestCase {
     
     func appProperlyDisplaysIngredient() {
-        let ingredient = Ingredients(name: "Tomato", quantity: 3, unit: "lbs", category: "Fruit", expiryDate: "27/03/2024")
+        let ingredient = Ingredient(name: "Tomato", quantity: "3", unit: Unit(rawValue: "lbs")!, category: "Fruit", expiryDate: "27/03/2024")
         
         XCTAssertEqual(ingredient.name, "Tomato")
-        XCTAssertEqual(ingredient.quantity, 3)
-        XCTAssertEqual(ingredient.unit, "lbs")
+        XCTAssertEqual(ingredient.quantity, "3")
+        XCTAssertEqual(ingredient.unit, Unit(rawValue: "lbs"))
         XCTAssertEqual(ingredient.category, "Fruit")
         XCTAssertEqual(ingredient.expiryDate, "27/03/2024")
         
