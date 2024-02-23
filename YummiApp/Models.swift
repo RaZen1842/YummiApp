@@ -31,3 +31,20 @@ enum Unit: String, CaseIterable {
     case lbs, oz, kg, g, L, mL, items
     var id: Self { self }
 }
+
+
+struct Recipe {
+    let name: String
+    var ingredients: [Ingredient]
+    var isFavourite: Bool
+    var rating: Int
+    
+    #if DEBUG
+
+    static var example = [Recipe(name: "Pasta", ingredients: [Ingredient](), isFavourite: true, rating: 5),
+                   Recipe(name: "Protein Powder", ingredients: [Ingredient](), isFavourite: false, rating: 3),
+                   Recipe(name: "Sandwich", ingredients: [Ingredient](), isFavourite: true, rating: 4)]
+
+    #endif
+    
+}
