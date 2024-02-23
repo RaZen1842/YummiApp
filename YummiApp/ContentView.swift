@@ -28,28 +28,25 @@ struct ContentView: View {
     }
     
     
-    
-    
-    
-    
-    
     var body: some View {
         Form {
             if ingredients.count > 0 {
                 Text("\(ingredients[selectedIngredient].display())")
+                
+                
+                Button("Next Ingredient", action: {
+                    selectedIngredient += 1
+                    if selectedIngredient == self.ingredients.count {
+                        selectedIngredient = 0
+                    }
+                })
             }
-            Button("Next Ingredient", action: {
-                selectedIngredient += 1
-                if selectedIngredient == self.ingredients.count {
-                    selectedIngredient = 0
-                }
-            })
-            
             
             
             
             Section {
                 Text("New Ingredient")
+                    .bold()
                 TextField("Ingredient",text: $newIngredientName)
                 TextField("Quantity",text: $newIngredientQuantity)
                 
