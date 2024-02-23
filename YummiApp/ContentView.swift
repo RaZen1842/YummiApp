@@ -15,13 +15,13 @@ struct ContentView: View {
     @State var newIngredientQuantity: String = ""
     @State var newIngredientUnit: Unit = .items
     @State var newIngredientCategory: String = ""
-    @State var newIngredientExpiryDate: String = ""
+    @State var newIngredientExpiryDate: Date = Date()
     
     @State var ingredients: [Ingredient] = [Ingredient]()
     
     
     var buttonDisabled: Bool {
-        if newIngredientName.count == 0 || newIngredientQuantity.count == 0 || newIngredientCategory.count == 0 || newIngredientExpiryDate.count == 0 {
+        if newIngredientName.count == 0 || newIngredientQuantity.count == 0 || newIngredientCategory.count == 0 {
             return true
         }
         return false
@@ -30,16 +30,16 @@ struct ContentView: View {
     
     var body: some View {
         Form {
-            if ingredients.count > 0 {
-                Text("\(ingredients[selectedIngredient].display())")
-                
-                
-                Button("Next Ingredient", action: {
-                    selectedIngredient += 1
-                    if selectedIngredient == self.ingredients.count {
-                        selectedIngredient = 0
-                    }
-                })
+                if ingredients.count > 0 {
+                    Text("\(ingredients[selectedIngredient].display())")
+                    
+                    
+                    Button("Next Ingredient", action: {
+                        selectedIngredient += 1
+                        if selectedIngredient == self.ingredients.count {
+                            selectedIngredient = 0
+                        }
+                    })
             }
             
             
@@ -59,7 +59,8 @@ struct ContentView: View {
                 
                 
                 TextField("Category",text: $newIngredientCategory)
-                TextField("Expiry Date",text: $newIngredientExpiryDate)
+                
+                DatePicker("Expiry Date", selection: $newIngredientExpiryDate, in: Date()..., displayedComponents: [.date])
                 
             }
                 

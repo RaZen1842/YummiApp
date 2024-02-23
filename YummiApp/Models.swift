@@ -12,7 +12,7 @@ struct Ingredient {
     var quantity: String
     var unit: Unit
     let category: String
-    var expiryDate: String
+    var expiryDate: Date
     
     
     func display() -> String {
@@ -21,7 +21,7 @@ Name: \(name)
 Quantity: \(quantity)
 Unit: \(unit.rawValue)
 Category: \(category)
-Expiry Date: \(expiryDate)
+Expiry Date: \(expiryDate.formatted(.dateTime.day().month(.wide).year()))
 """
     }
     
