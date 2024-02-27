@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853727202B8E13C100174CB6 /* RecipiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537271F2B8E13C100174CB6 /* RecipiesView.swift */; };
 		85BE330E2B61753F0013DB85 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Models.swift */; };
 		85BE330F2B61753F0013DB85 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Models.swift */; };
 		85BE33132B6179B40013DB85 /* YummiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1832B5FED31001D144B /* YummiAppTests.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8537271F2B8E13C100174CB6 /* RecipiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesView.swift; sourceTree = "<group>"; };
 		85BE330D2B61753F0013DB85 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		85F3D16F2B5FED2F001D144B /* YummiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F3D1722B5FED2F001D144B /* YummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiApp.swift; sourceTree = "<group>"; };
@@ -97,8 +99,9 @@
 		85F3D1712B5FED2F001D144B /* YummiApp */ = {
 			isa = PBXGroup;
 			children = (
-				85F3D1722B5FED2F001D144B /* YummiApp.swift */,
 				85F3D1742B5FED2F001D144B /* ContentView.swift */,
+				8537271F2B8E13C100174CB6 /* RecipiesView.swift */,
+				85F3D1722B5FED2F001D144B /* YummiApp.swift */,
 				85BE330D2B61753F0013DB85 /* Models.swift */,
 				85F3D1762B5FED31001D144B /* Assets.xcassets */,
 				85F3D1782B5FED31001D144B /* Preview Content */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853727202B8E13C100174CB6 /* RecipiesView.swift in Sources */,
 				85BE330E2B61753F0013DB85 /* Models.swift in Sources */,
 				85F3D1732B5FED2F001D144B /* YummiApp.swift in Sources */,
 				85BE33162B617C760013DB85 /* ContentView.swift in Sources */,
