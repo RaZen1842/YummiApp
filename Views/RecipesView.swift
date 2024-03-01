@@ -10,14 +10,18 @@ import SwiftUI
 
 struct RecipesView: View {
     
-    @State var recpies = Recipe.example
+    @State var recipes: [Recipe]
     var body: some View {
-        Text("todo")
+        List {
+            ForEach(recipes, id: \.self.name) { recipe in
+                Text("\(recipe.name)")
+            }
+        }
     }
 }
 
 #Preview {
-    RecipesView(recipes: Recipe)
+    RecipesView(recipes: Recipe.example)
 }
 
 
