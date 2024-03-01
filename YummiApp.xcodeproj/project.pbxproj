@@ -76,9 +76,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		854213002B91E444003DB5F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85F3D1742B5FED2F001D144B /* ContentView.swift */,
+				8537271F2B8E13C100174CB6 /* RecipiesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		854213012B91E552003DB5F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85BE330D2B61753F0013DB85 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		85F3D1662B5FED2F001D144B = {
 			isa = PBXGroup;
 			children = (
+				854213002B91E444003DB5F9 /* Views */,
+				854213012B91E552003DB5F9 /* Models */,
 				85F3D1712B5FED2F001D144B /* YummiApp */,
 				85F3D1822B5FED31001D144B /* YummiAppTests */,
 				85F3D18C2B5FED31001D144B /* YummiAppUITests */,
@@ -99,10 +118,7 @@
 		85F3D1712B5FED2F001D144B /* YummiApp */ = {
 			isa = PBXGroup;
 			children = (
-				85F3D1742B5FED2F001D144B /* ContentView.swift */,
-				8537271F2B8E13C100174CB6 /* RecipiesView.swift */,
 				85F3D1722B5FED2F001D144B /* YummiApp.swift */,
-				85BE330D2B61753F0013DB85 /* Models.swift */,
 				85F3D1762B5FED31001D144B /* Assets.xcassets */,
 				85F3D1782B5FED31001D144B /* Preview Content */,
 			);
