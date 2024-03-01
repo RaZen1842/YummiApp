@@ -71,6 +71,7 @@ struct ContentView: View {
                 })
                 .disabled(buttonDisabled)
             }
+            
         }
     }
 }
