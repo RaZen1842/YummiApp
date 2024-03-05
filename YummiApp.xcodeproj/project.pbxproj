@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851238E12B974DE300614CE8 /* ToggleViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851238E02B974DE300614CE8 /* ToggleViewViewModel.swift */; };
+		851238E32B974FF600614CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851238E22B974FF600614CE8 /* ContentView.swift */; };
 		853727202B8E13C100174CB6 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537271F2B8E13C100174CB6 /* RecipesView.swift */; };
 		854213032B91EBD7003DB5F9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854213022B91EBD7003DB5F9 /* Recipe.swift */; };
 		854213042B91EBD7003DB5F9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854213022B91EBD7003DB5F9 /* Recipe.swift */; };
 		854213062B91F083003DB5F9 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854213052B91F083003DB5F9 /* IngredientsView.swift */; };
-		854213072B91F083003DB5F9 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854213052B91F083003DB5F9 /* IngredientsView.swift */; };
 		85BE330E2B61753F0013DB85 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredient.swift */; };
 		85BE330F2B61753F0013DB85 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BE330D2B61753F0013DB85 /* Ingredient.swift */; };
 		85BE33132B6179B40013DB85 /* YummiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1832B5FED31001D144B /* YummiAppTests.swift */; };
-		85BE33162B617C760013DB85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1742B5FED2F001D144B /* ContentView.swift */; };
 		85F3D1732B5FED2F001D144B /* YummiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3D1722B5FED2F001D144B /* YummiApp.swift */; };
 		85F3D1772B5FED31001D144B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F3D1762B5FED31001D144B /* Assets.xcassets */; };
 		85F3D17A2B5FED31001D144B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F3D1792B5FED31001D144B /* Preview Assets.xcassets */; };
@@ -41,13 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		851238E02B974DE300614CE8 /* ToggleViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleViewViewModel.swift; sourceTree = "<group>"; };
+		851238E22B974FF600614CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8537271F2B8E13C100174CB6 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		854213022B91EBD7003DB5F9 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		854213052B91F083003DB5F9 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		85BE330D2B61753F0013DB85 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		85F3D16F2B5FED2F001D144B /* YummiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YummiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F3D1722B5FED2F001D144B /* YummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummiApp.swift; sourceTree = "<group>"; };
-		85F3D1742B5FED2F001D144B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85F3D1762B5FED31001D144B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85F3D1792B5FED31001D144B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85F3D17F2B5FED31001D144B /* YummiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YummiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,12 +83,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		851238DF2B974DC000614CE8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				851238E02B974DE300614CE8 /* ToggleViewViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		854213002B91E444003DB5F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				85F3D1742B5FED2F001D144B /* ContentView.swift */,
 				8537271F2B8E13C100174CB6 /* RecipesView.swift */,
 				854213052B91F083003DB5F9 /* IngredientsView.swift */,
+				851238E22B974FF600614CE8 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +113,7 @@
 		85F3D1662B5FED2F001D144B = {
 			isa = PBXGroup;
 			children = (
+				851238DF2B974DC000614CE8 /* View Models */,
 				854213002B91E444003DB5F9 /* Views */,
 				854213012B91E552003DB5F9 /* Models */,
 				85F3D1712B5FED2F001D144B /* YummiApp */,
@@ -290,10 +300,11 @@
 			files = (
 				853727202B8E13C100174CB6 /* RecipesView.swift in Sources */,
 				854213062B91F083003DB5F9 /* IngredientsView.swift in Sources */,
+				851238E32B974FF600614CE8 /* ContentView.swift in Sources */,
 				85BE330E2B61753F0013DB85 /* Ingredient.swift in Sources */,
 				85F3D1732B5FED2F001D144B /* YummiApp.swift in Sources */,
-				85BE33162B617C760013DB85 /* ContentView.swift in Sources */,
 				854213032B91EBD7003DB5F9 /* Recipe.swift in Sources */,
+				851238E12B974DE300614CE8 /* ToggleViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +315,6 @@
 				854213042B91EBD7003DB5F9 /* Recipe.swift in Sources */,
 				85BE330F2B61753F0013DB85 /* Ingredient.swift in Sources */,
 				85BE33132B6179B40013DB85 /* YummiAppTests.swift in Sources */,
-				854213072B91F083003DB5F9 /* IngredientsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
