@@ -12,9 +12,11 @@ struct RecipesView: View {
     
     @State var recipes: [Recipe]
     var body: some View {
-        List {
-            ForEach(recipes, id: \.self.name) { recipe in
-                Text("\(recipe.name)")
+        NavigationStack {
+            List(recipes) { recipe in
+                NavigationLink(recipe.name) {
+                    RecipeDetailView(recipes: recipes)
+                }
             }
         }
     }
