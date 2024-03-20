@@ -23,4 +23,11 @@ struct Recipe: Identifiable {
 
     #endif
     
+    func displayProperties() -> String {
+return """
+\(self.name)
+Rating: \(self.rating)/5
+Favourite: \(self.isFavourite ? "Yes": "No")
+"""
+    }
 }

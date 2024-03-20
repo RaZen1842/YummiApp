@@ -8,22 +8,14 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
-    @State var recipes: [Recipe]
+    //change to JSON later
+    var recipe: Recipe
     
     var body: some View {
-        List {
-            ForEach(recipes, id: \.self.name) { recipe in
-                Text("""
-**\(recipe.name)**
-Rating: \(recipe.rating)/5
-Favourite: \(recipe.isFavourite ? "Yes": "No")
-
-""")
+        Form {
+            VStack {
+                Text(recipe.displayProperties())
             }
         }
     }
-}
-
-#Preview {
-    RecipeDetailView(recipes: Recipe.example)
 }
