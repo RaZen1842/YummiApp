@@ -28,7 +28,10 @@ struct IngredientsView: View {
     
     
     var body: some View {
-        Form {
+        VStack {
+            Text("Ingredients")
+                .bold()
+            Form {
                 if ingredients.count > 0 {
                     Text("\(ingredients[selectedIngredient].display())")
                     
@@ -39,40 +42,41 @@ struct IngredientsView: View {
                             selectedIngredient = 0
                         }
                     })
-            }
-            
-            
-            
-            Section {
-                Text("New Ingredient")
-                    .bold()
-                TextField("Ingredient",text: $newIngredientName)
-                TextField("Quantity",text: $newIngredientQuantity)
-                
-                
-                Picker("Unit", selection: $newIngredientUnit) {
-                    ForEach(Unit.allCases, id:\.self) {
-                        unit in Text(unit.rawValue)
-                    }
                 }
                 
                 
-                TextField("Category",text: $newIngredientCategory)
                 
-                DatePicker("Expiry Date", selection: $newIngredientExpiryDate, in: Date()..., displayedComponents: [.date])
+                Section {
+                    Text("New Ingredient")
+                        .bold()
+                    TextField("Ingredient",text: $newIngredientName)
+                    TextField("Quantity",text: $newIngredientQuantity)
+                    
+                    
+                    Picker("Unit", selection: $newIngredientUnit) {
+                        ForEach(Unit.allCases, id:\.self) {
+                            unit in Text(unit.rawValue)
+                        }
+                    }
+                    
+                    
+                    TextField("Category",text: $newIngredientCategory)
+                    
+                    DatePicker("Expiry Date", selection: $newIngredientExpiryDate, in: Date()..., displayedComponents: [.date])
+                    
+                }
+                
+                Section {
+                    Button("Enter", action: {
+                        ingredients.append(Ingredient(name: newIngredientName, quantity: newIngredientQuantity, unit: newIngredientUnit, category: newIngredientCategory, expiryDate: newIngredientExpiryDate))
+                        newIngredientName = ""
+                        newIngredientQuantity = ""
+                        newIngredientCategory = ""
+                    })
+                    .disabled(buttonDisabled)
+                }
                 
             }
-                
-            Section {
-                Button("Enter", action: {
-                    ingredients.append(Ingredient(name: newIngredientName, quantity: newIngredientQuantity, unit: newIngredientUnit, category: newIngredientCategory, expiryDate: newIngredientExpiryDate))
-                    newIngredientName = ""
-                    newIngredientQuantity = ""
-                    newIngredientCategory = ""
-                })
-                .disabled(buttonDisabled)
-            }
-            
         }
     }
 }

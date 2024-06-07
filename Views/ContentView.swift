@@ -9,19 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var buttonOn = false
-    
     var body: some View {
-        VStack {
-            Toggle(isOn: $buttonOn) {
-                Text("Show Recipes")
-            }
-            .padding()
-            if buttonOn == false {
-                IngredientsView()
-            }
-            else {
+        NavigationStack {
+            TabView {
                 RecipesView(recipes: Recipe.example)
+                    .tabItem {
+                        Label("Recipes",systemImage: "list.dash")
+                    }
+                
+                IngredientsView()
+                    .tabItem {
+                        Label("Ingredients", systemImage: "pencil.and.list.clipboard")
+                    }
+                
+                SearchMealView()
+                    .tabItem {
+                        Label("Search", systemImage: "magnifyingglass")
+                    }
             }
         }
     }

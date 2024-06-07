@@ -13,6 +13,9 @@ struct RecipesView: View {
     @State var recipes: [Recipe]
     var body: some View {
         NavigationStack {
+            Text("Recipes")
+                .bold()
+            
             Form {
                 ForEach(recipes, id: \.self.id) { recipe in
                     NavigationLink("\(recipe.name)", destination: RecipeDetailView(recipe: recipe))
